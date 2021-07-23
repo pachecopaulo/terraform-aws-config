@@ -83,7 +83,7 @@ This terraform configuration uses terraform version 1.0.0
 - Setup a new or use an existing `terraform workspace` for the environment where the changes are going to be applied. This will make sure the changes relevant to a given environment are stored individually in S3.
 
 ```
-terraform workspace new `test`
+terraform workspace new test
 ```
 
 - Initiate the terraform and store the state on S3 bucket: `terraform init`
@@ -93,7 +93,7 @@ terraform workspace new `test`
 - Apply the changes `terraform apply test-environment.tfplan`
 
 ### Accessing the EKS cluster
-- Configure the kubeconfig file:  `https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html`
+- Configure the [kubeconfig file](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
 
 ### App Deployment 
 
