@@ -1,0 +1,17 @@
+environment          = "test"
+eks_cluster_version  = "1.20"
+region               = "eu-west-1"
+cidr                 = "10.0.0.0/16"
+availability_zones   = ["eu-west-1a", "eu-west-1b"]
+private_subnets      = ["10.0.0.0/20", "10.0.32.0/20"]
+public_subnets       = ["10.0.16.0/20", "10.0.48.0/20"]
+vpc_name             = "demo-vpc"
+eks_cluster_name     = "demo-eks"
+node_group_name      = "eks-node-group"
+ng_instance_types    = ["t3a.medium"]
+disk_size            = 5
+desired_nodes        = 2
+max_nodes            = 2
+min_nodes            = 1
+fargate_profile_name = "demo-fargate"
+fargate_namespaces   = ["test"]
