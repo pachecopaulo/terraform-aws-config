@@ -12,7 +12,7 @@ I won't be configuring Horizontal Pod AutoScale for the POD's to keep things sim
 
 Network components such as ALB, NAT, IG, etc will be deployed across multiple AZ's to avoid a single point of failure in case of one the AZ is down.
 
-## Prerequisites
+## Prerequisite
 
 - A bucket on S3 must be created before hand, so the Terraform state changes can be stored on it. For this configuration I have already defined a bucket `aws-demo-infrastructure`
 
@@ -46,8 +46,6 @@ Network components such as ALB, NAT, IG, etc will be deployed across multiple AZ
     - namespaces
 
 - IAM roles such as EKS load balancer controller, etc
-
-# AWS Configuration
 
 ## Authentication - AWS Credentials
 
